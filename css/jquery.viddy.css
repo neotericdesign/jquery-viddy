@@ -8,14 +8,14 @@
 	left:0;
 	z-index:2;
 }
-#viddy_play_icon{
+.viddy_play_icon{
 	position:absolute;
 	top:50%;
 	left:50%;
 	z-index:3;
 	cursor:pointer;
 }
-#viddy_play_icon:hover{
+.viddy_play_icon:hover{
 	-webkit-transform:scale(1.05);
 	-moz-transform:scale(1.05);
 	-khtml-transform:scale(1.05);
