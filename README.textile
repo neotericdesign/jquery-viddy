@@ -1,5 +1,17 @@
-Single format HTML5 video tag cross-browser format
+h2. What is Viddy?
 
-Sticky the poster file until user interaction
+Viddy is a jQuery plugin that simplifies & extends the use of the HTML5 video tag
+
+h2. Cross Browser
+
+Tested in Chrome, Safari, Firefox, IE7 & IE8
+
+h2. Use a single format: h.264 mp4
+
+With Viddy, you can use one format of video, and the plugin does the work of detecting the user agent, defaulting to JW Player in Firefox & IE
+
+h2. Make the poster attribute sticky
+
+The VIDEO poster attribute only shows the image 'while' there is no video to play. Viddy will automatically place your poster image over top the video tag with a play button, and it will also use the poster image with JW Player's "image" flashvar
 
 The example video is courtesy of "http://justincone.com/v2/":Justin Cone via a "http://creativecommons.org":Creative Commons licence
