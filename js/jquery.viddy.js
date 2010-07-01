@@ -27,12 +27,13 @@
 
             // Using feature detection
             if (canPlayMP4()) {
-                video.wrap('<div class="video_wrap" style="position:relative; width:'+width+'; height:'+height+';" />');
-                video.after('<img class="video_still" src="'+ image +'" style="cursor:pointer; position:absolute; top:5px; left:5px; width:'+width+'; height:'+height+';" />');
+                video.wrap('<div class="viddy_video_wrap" style="width:'+width+'px; height:'+height+'px;" />');
+                video.after('<img class="viddy_video_still" src="'+ image +'" style="width:'+width+'px; height:'+height+'px;" />\
+															<img src="'+config.playIcon+'" id="viddy_play_icon" style="margin:-'+height/16+'px 0 0 -'+width/16+'px"/>');
 
-                $('.video_still').live('click', function(){
-                    $(this).prev('video')[0].play();
-                    $(this).remove();
+                $('#viddy_play_icon').live('click', function(){
+										$(this).parent().find('video')[0].play();
+                    $(this).parent().find('img').remove();
                 });
 
             } else { // Fallback to JWPlayer
