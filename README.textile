@@ -14,4 +14,4 @@ h2. Make the poster attribute sticky
 
 The VIDEO poster attribute only shows the image 'while' there is no video to play. Viddy will automatically place your poster image over top the video tag with a play button, and it will also use the poster image with JW Player's "image" flashvar
 
-The example video is courtesy of "http://justincone.com/v2/":Justin Cone via a "http://creativecommons.org":Creative Commons licence
+The example video is courtesy of "Justin Cone":http://justincone.com/v2/ via a "Creative Commons":http://creativecommons.org licence
