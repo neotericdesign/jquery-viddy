@@ -1,0 +1,5 @@
+Single format HTML5 video tag cross-browser format
+
+Sticky the poster file until user interaction
+
+The example video is courtesy of "http://justincone.com/v2/":Justin Cone via a "http://creativecommons.org":Creative Commons licence

@@ -27,16 +27,21 @@
 
             // Using feature detection
             if (canPlayMP4()) {
-                video.wrap('<div class="viddy_video_wrap" style="width:'+width+'px; height:'+height+'px;" />');
-                video.after('<img class="viddy_video_still" src="'+ image +'" style="width:'+width+'px; height:'+height+'px;" />\
-															<img src="'+config.playIcon+'" id="viddy_play_icon" style="margin:-'+height/16+'px 0 0 -'+width/16+'px"/>');
+						                video.wrap('<div class="viddy_video_wrap" style="width:'+width+'px; height:'+height+'px;" />');
+						                video.after('<img class="viddy_video_still" src="'+ image +'" style="width:'+width+'px; height:'+height+'px;" />\
+																					<img src="'+config.playIcon+'" class="viddy_play_icon" />');
 
-                $('#viddy_play_icon').live('click', function(){
-										$(this).parent().find('video')[0].play();
-                    $(this).parent().find('img').remove();
-                });
+						                $('.viddy_play_icon').load(function(){
+															$(this).css({
+																marginTop: '-' + $(this).height()/2 + 'px',
+																marginLeft: '-' + $(this).width()/2 + 'px'
+															})
+														}).live('click', function(){
+																$(this).parent().find('video')[0].play();
+						                    $(this).parent().find('img').remove();
+						                });
 
-            } else { // Fallback to JWPlayer
+						            } else { // Fallback to JWPlayer
                 if(height < 150) height = 250;
                 if (width < 250)  width = 400;
 
