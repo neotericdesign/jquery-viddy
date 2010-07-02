@@ -4,14 +4,14 @@ Viddy is a jQuery plugin that simplifies & extends the use of the HTML5 video ta
 
 h2. Cross Browser
 
-Tested in Chrome, Safari, Firefox, IE7 & IE8
+Tested and working in Chrome, Safari, Firefox, IE7 and IE8. Opera and IE6 have not yet been tested.
 
 h2. Use a single format: h.264 mp4
 
-With Viddy, you can use one format of video, and the plugin does the work of detecting the user agent, defaulting to JW Player in Firefox & IE
+With Viddy, you can use one format of video, and the plugin does the work of detecting if mp4 video playing is available, falling back to "JW Player":http://www.longtailvideo.com in Firefox & IE
 
 h2. Make the poster attribute sticky
 
 The VIDEO poster attribute only shows the image 'while' there is no video to play. Viddy will automatically place your poster image over top the video tag with a play button, and it will also use the poster image with JW Player's "image" flashvar
 
-The example video is courtesy of "Justin Cone":http://justincone.com/v2/ via a "Creative Commons":http://creativecommons.org licence
+The example video is courtesy of "Justin Cone":http://justincone.com/v2/ via a "Creative Commons":http://creativecommons.org license
